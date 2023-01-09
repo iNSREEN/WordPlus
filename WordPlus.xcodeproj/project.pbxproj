@@ -14,6 +14,8 @@
 		53A522C8296C3FB30073B5C1 /* WordPlusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A522C7296C3FB30073B5C1 /* WordPlusTests.swift */; };
 		53A522D2296C3FB30073B5C1 /* WordPlusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A522D1296C3FB30073B5C1 /* WordPlusUITests.swift */; };
 		53A522D4296C3FB30073B5C1 /* WordPlusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A522D3296C3FB30073B5C1 /* WordPlusUITestsLaunchTests.swift */; };
+		53A522E1296C56B00073B5C1 /* 40448-select-your-language.json in Resources */ = {isa = PBXBuildFile; fileRef = 53A522E0296C56B00073B5C1 /* 40448-select-your-language.json */; };
+		53A522E3296C56C40073B5C1 /* 67614-landing-page-element-animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 53A522E2296C56C40073B5C1 /* 67614-landing-page-element-animation.json */; };
 		A0CF7BC7296C49D5007A8CD7 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CF7BC6296C49D5007A8CD7 /* RowView.swift */; };
 		A0CF7BC9296C51EF007A8CD7 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CF7BC8296C51EF007A8CD7 /* AddView.swift */; };
 /* End PBXBuildFile section */
@@ -46,6 +48,8 @@
 		53A522CD296C3FB30073B5C1 /* WordPlusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordPlusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		53A522D1296C3FB30073B5C1 /* WordPlusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPlusUITests.swift; sourceTree = "<group>"; };
 		53A522D3296C3FB30073B5C1 /* WordPlusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPlusUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		53A522E0296C56B00073B5C1 /* 40448-select-your-language.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "40448-select-your-language.json"; sourceTree = "<group>"; };
+		53A522E2296C56C40073B5C1 /* 67614-landing-page-element-animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "67614-landing-page-element-animation.json"; sourceTree = "<group>"; };
 		A0CF7BC6296C49D5007A8CD7 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
 		A0CF7BC8296C51EF007A8CD7 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,6 +106,8 @@
 				53A522B8296C3FB10073B5C1 /* HomeView.swift */,
 				A0CF7BC8296C51EF007A8CD7 /* AddView.swift */,
 				A0CF7BC6296C49D5007A8CD7 /* RowView.swift */,
+				53A522E0296C56B00073B5C1 /* 40448-select-your-language.json */,
+				53A522E2296C56C40073B5C1 /* 67614-landing-page-element-animation.json */,
 				53A522BA296C3FB30073B5C1 /* Assets.xcassets */,
 				53A522BC296C3FB30073B5C1 /* Preview Content */,
 			);
@@ -237,6 +243,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53A522E1296C56B00073B5C1 /* 40448-select-your-language.json in Resources */,
+				53A522E3296C56C40073B5C1 /* 67614-landing-page-element-animation.json in Resources */,
 				53A522BE296C3FB30073B5C1 /* Preview Assets.xcassets in Resources */,
 				53A522BB296C3FB30073B5C1 /* Assets.xcassets in Resources */,
 			);
