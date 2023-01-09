@@ -25,7 +25,7 @@ struct HomeView: View {
                 }.foregroundColor(Color("Main"))
                     .font(.largeTitle)
                 
-                
+              
                 ScrollView{
                     
                     ForEach(1..<8) { i in
