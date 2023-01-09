@@ -1,7 +1,6 @@
 //
 //  WordPlusApp.swift
-//  WordPlus
-//
+//  WordPlus//
 //  Created by Nsreen Alfaifi on 16/06/1444 AH.
 //
 
@@ -11,7 +10,7 @@ import SwiftUI
 struct WordPlusApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
     }
 }
