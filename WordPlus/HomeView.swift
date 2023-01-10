@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     @State var isSheetPresented = false
-    @AppStorage("key1")  var shouldshowonb = true
+    @AppStorage("key2")  var shouldshowonb = true
     var body: some View {
         ZStack {
             Color("SecondMain")
@@ -54,8 +54,6 @@ struct HomeView_Previews: PreviewProvider {
     }
 }
 
-
-
 struct HeaderView: View {
     var body: some View {
         HStack{
@@ -76,8 +74,8 @@ struct tab : View{
             Color("SecondMain").ignoresSafeArea(.all)
         TabView{
             
-            Text("meow1").background(.red)
-            Text("meow2")
+          OnBoarding1View()
+          OnBoarding2View(shouldshowonb: $shouldshowonb)
                         
         }.tabViewStyle(PageTabViewStyle())
               
