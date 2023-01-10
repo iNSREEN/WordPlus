@@ -46,14 +46,14 @@ struct HomeView: View {
               }.ignoresSafeArea(.all)
     }
 }
-//
-//struct HomeView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        HomeView(isSheetPresented: .constant(false), shouldshowonb: true)
-//
-//    }
-//}
-//
+
+struct HomeView_Previews: PreviewProvider {
+    static var previews: some View {
+      //  HomeView(isSheetPresented:false, shouldshowonb: true)
+        HomeView()
+    }
+}
+
 
 
 struct HeaderView: View {

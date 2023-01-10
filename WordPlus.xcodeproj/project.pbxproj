@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		531EE67E296D86C200421EC9 /* OnBoarding1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531EE67D296D86C200421EC9 /* OnBoarding1View.swift */; };
+		531EE680296D86CD00421EC9 /* OnBoarding2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531EE67F296D86CD00421EC9 /* OnBoarding2View.swift */; };
 		53A522B7296C3FB10073B5C1 /* WordPlusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A522B6296C3FB10073B5C1 /* WordPlusApp.swift */; };
 		53A522B9296C3FB10073B5C1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A522B8296C3FB10073B5C1 /* HomeView.swift */; };
 		53A522BB296C3FB30073B5C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53A522BA296C3FB30073B5C1 /* Assets.xcassets */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		531EE67D296D86C200421EC9 /* OnBoarding1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoarding1View.swift; sourceTree = "<group>"; };
+		531EE67F296D86CD00421EC9 /* OnBoarding2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoarding2View.swift; sourceTree = "<group>"; };
 		53A522B3296C3FB10073B5C1 /* WordPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53A522B6296C3FB10073B5C1 /* WordPlusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPlusApp.swift; sourceTree = "<group>"; };
 		53A522B8296C3FB10073B5C1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -109,6 +113,8 @@
 				53A522B6296C3FB10073B5C1 /* WordPlusApp.swift */,
 				A0CB12E1296C5AE4007522EC /* LottieView.swift */,
 				53A522B8296C3FB10073B5C1 /* HomeView.swift */,
+				531EE67D296D86C200421EC9 /* OnBoarding1View.swift */,
+				531EE67F296D86CD00421EC9 /* OnBoarding2View.swift */,
 				A0CF7BC8296C51EF007A8CD7 /* AddView.swift */,
 				A0CF7BC6296C49D5007A8CD7 /* RowView.swift */,
 				53A522E0296C56B00073B5C1 /* 40448-select-your-language.json */,
@@ -283,10 +289,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0CF7BC9296C51EF007A8CD7 /* AddView.swift in Sources */,
+				531EE680296D86CD00421EC9 /* OnBoarding2View.swift in Sources */,
 				53A522B9296C3FB10073B5C1 /* HomeView.swift in Sources */,
 				A0CB12E2296C5AE5007522EC /* LottieView.swift in Sources */,
 				A0CF7BC7296C49D5007A8CD7 /* RowView.swift in Sources */,
 				53A522B7296C3FB10073B5C1 /* WordPlusApp.swift in Sources */,
+				531EE67E296D86C200421EC9 /* OnBoarding1View.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
