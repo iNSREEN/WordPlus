@@ -19,7 +19,8 @@ struct AddView: View {
             Color.gray.ignoresSafeArea().opacity(0.4)
             VStack {
                 HStack {
-                    Text("Add new Word").foregroundColor(Color("Main")).font(.title)
+                    Text("Add new Word")
+                        .foregroundColor(Color("Main")).font(.title)
                     Spacer()
                     
                 }

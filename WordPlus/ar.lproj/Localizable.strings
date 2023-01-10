@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  WordPlus
+
+  Created by lulwah on 10/01/2023.
+  
+*/
+"To learn a new language " = "لتعلم لغة جديدة ";
+"Start with a" = "إبدأ";
+"word" = "بكلمة" ;
+"Start" = "إبدأ";
+"My Vocabulary" = "مفرداتي" ;
+"Add new Word" = "إضافة كلمة جديدة";
+"Meaning" = "المعنى" ;
+"Word" = "الكلمة";
+
+//"enter.." = "enter.." ;
+"Add" = "إضافة";

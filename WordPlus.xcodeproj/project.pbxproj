@@ -22,6 +22,7 @@
 		A06771BD296D90E900DF0E77 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A06771BC296D90E900DF0E77 /* RealmSwift */; };
 		A06771BF296D927B00DF0E77 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06771BE296D927B00DF0E77 /* RealmManager.swift */; };
 		A06771C1296D949300DF0E77 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06771C0296D949300DF0E77 /* Model.swift */; };
+		A06771C4296DAA1100DF0E77 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A06771C6296DAA1100DF0E77 /* Localizable.strings */; };
 		A0CB12E0296C5A3D007522EC /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = A0CB12DF296C5A3D007522EC /* Lottie */; };
 		A0CB12E2296C5AE5007522EC /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CB12E1296C5AE4007522EC /* LottieView.swift */; };
 		A0CF7BC7296C49D5007A8CD7 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CF7BC6296C49D5007A8CD7 /* RowView.swift */; };
@@ -62,6 +63,8 @@
 		53A522E2296C56C40073B5C1 /* 67614-landing-page-element-animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "67614-landing-page-element-animation.json"; sourceTree = "<group>"; };
 		A06771BE296D927B00DF0E77 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		A06771C0296D949300DF0E77 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		A06771C5296DAA1100DF0E77 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A06771C7296DAA1300DF0E77 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A0CB12E1296C5AE4007522EC /* LottieView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		A0CF7BC6296C49D5007A8CD7 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
 		A0CF7BC8296C51EF007A8CD7 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
@@ -118,6 +121,7 @@
 		53A522B5296C3FB10073B5C1 /* WordPlus */ = {
 			isa = PBXGroup;
 			children = (
+				A06771C6296DAA1100DF0E77 /* Localizable.strings */,
 				53A522B6296C3FB10073B5C1 /* WordPlusApp.swift */,
 				A0CB12E1296C5AE4007522EC /* LottieView.swift */,
 				53A522B8296C3FB10073B5C1 /* HomeView.swift */,
@@ -251,6 +255,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = 53A522AA296C3FB10073B5C1;
 			packageReferences = (
@@ -273,6 +278,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A06771C4296DAA1100DF0E77 /* Localizable.strings in Resources */,
 				53A522E1296C56B00073B5C1 /* 40448-select-your-language.json in Resources */,
 				53A522E3296C56C40073B5C1 /* 67614-landing-page-element-animation.json in Resources */,
 				53A522BE296C3FB30073B5C1 /* Preview Assets.xcassets in Resources */,
@@ -344,6 +350,18 @@
 			targetProxy = 53A522CE296C3FB30073B5C1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A06771C6296DAA1100DF0E77 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A06771C5296DAA1100DF0E77 /* en */,
+				A06771C7296DAA1300DF0E77 /* ar */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		53A522D5296C3FB30073B5C1 /* Debug */ = {

@@ -21,14 +21,21 @@ struct OnBoarding2View: View {
             VStack {
                 
                 LottieView(filename: "67614-landing-page-element-animation")
-                    .frame(width: 200, height: 200)
-                Text("Start with a word ").foregroundColor(Color("Main"))
-                
+                    .frame(width: 340, height: 300)
+                HStack{
+                    Text("Start with a")
+                        .foregroundColor(Color("Second"))
+                    Text("word")
+                        .foregroundColor(Color("Main"))
+                    
+                }.font(.largeTitle)
+                    .bold()
                 Button {
                     shouldshowonb.toggle()
                 } label: {
+                    Text( "Start")
+                     
                     
-                    Text("start")
                     
                 }
 
