@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct RowView: View {
+    @EnvironmentObject var realmManager : RealmManager
     @State var word1 = "Different"
     @State var word2 = "مختلف"
     var body: some View {
@@ -35,6 +36,6 @@ struct RowView: View {
 
 struct RowView_Previews: PreviewProvider {
     static var previews: some View {
-        RowView()
+        RowView().environmentObject(RealmManager())
     }
 }

@@ -18,6 +18,10 @@
 		53A522D4296C3FB30073B5C1 /* WordPlusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A522D3296C3FB30073B5C1 /* WordPlusUITestsLaunchTests.swift */; };
 		53A522E1296C56B00073B5C1 /* 40448-select-your-language.json in Resources */ = {isa = PBXBuildFile; fileRef = 53A522E0296C56B00073B5C1 /* 40448-select-your-language.json */; };
 		53A522E3296C56C40073B5C1 /* 67614-landing-page-element-animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 53A522E2296C56C40073B5C1 /* 67614-landing-page-element-animation.json */; };
+		A06771BB296D90E900DF0E77 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = A06771BA296D90E900DF0E77 /* Realm */; };
+		A06771BD296D90E900DF0E77 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A06771BC296D90E900DF0E77 /* RealmSwift */; };
+		A06771BF296D927B00DF0E77 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06771BE296D927B00DF0E77 /* RealmManager.swift */; };
+		A06771C1296D949300DF0E77 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06771C0296D949300DF0E77 /* Model.swift */; };
 		A0CB12E0296C5A3D007522EC /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = A0CB12DF296C5A3D007522EC /* Lottie */; };
 		A0CB12E2296C5AE5007522EC /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CB12E1296C5AE4007522EC /* LottieView.swift */; };
 		A0CF7BC7296C49D5007A8CD7 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CF7BC6296C49D5007A8CD7 /* RowView.swift */; };
@@ -56,6 +60,8 @@
 		53A522D3296C3FB30073B5C1 /* WordPlusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPlusUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		53A522E0296C56B00073B5C1 /* 40448-select-your-language.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "40448-select-your-language.json"; sourceTree = "<group>"; };
 		53A522E2296C56C40073B5C1 /* 67614-landing-page-element-animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "67614-landing-page-element-animation.json"; sourceTree = "<group>"; };
+		A06771BE296D927B00DF0E77 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		A06771C0296D949300DF0E77 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		A0CB12E1296C5AE4007522EC /* LottieView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		A0CF7BC6296C49D5007A8CD7 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
 		A0CF7BC8296C51EF007A8CD7 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
@@ -66,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A06771BD296D90E900DF0E77 /* RealmSwift in Frameworks */,
+				A06771BB296D90E900DF0E77 /* Realm in Frameworks */,
 				A0CB12E0296C5A3D007522EC /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -115,6 +123,8 @@
 				53A522B8296C3FB10073B5C1 /* HomeView.swift */,
 				531EE67D296D86C200421EC9 /* OnBoarding1View.swift */,
 				531EE67F296D86CD00421EC9 /* OnBoarding2View.swift */,
+				A06771BE296D927B00DF0E77 /* RealmManager.swift */,
+				A06771C0296D949300DF0E77 /* Model.swift */,
 				A0CF7BC8296C51EF007A8CD7 /* AddView.swift */,
 				A0CF7BC6296C49D5007A8CD7 /* RowView.swift */,
 				53A522E0296C56B00073B5C1 /* 40448-select-your-language.json */,
@@ -168,6 +178,8 @@
 			name = WordPlus;
 			packageProductDependencies = (
 				A0CB12DF296C5A3D007522EC /* Lottie */,
+				A06771BA296D90E900DF0E77 /* Realm */,
+				A06771BC296D90E900DF0E77 /* RealmSwift */,
 			);
 			productName = WordPlus;
 			productReference = 53A522B3296C3FB10073B5C1 /* WordPlus.app */;
@@ -243,6 +255,7 @@
 			mainGroup = 53A522AA296C3FB10073B5C1;
 			packageReferences = (
 				A0CB12DE296C5A3D007522EC /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				A06771B9296D90E900DF0E77 /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = 53A522B4296C3FB10073B5C1 /* Products */;
 			projectDirPath = "";
@@ -288,7 +301,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A06771C1296D949300DF0E77 /* Model.swift in Sources */,
 				A0CF7BC9296C51EF007A8CD7 /* AddView.swift in Sources */,
+				A06771BF296D927B00DF0E77 /* RealmManager.swift in Sources */,
 				531EE680296D86CD00421EC9 /* OnBoarding2View.swift in Sources */,
 				53A522B9296C3FB10073B5C1 /* HomeView.swift in Sources */,
 				A0CB12E2296C5AE5007522EC /* LottieView.swift in Sources */,
@@ -621,6 +636,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		A06771B9296D90E900DF0E77 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		A0CB12DE296C5A3D007522EC /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
@@ -632,6 +655,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		A06771BA296D90E900DF0E77 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A06771B9296D90E900DF0E77 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		A06771BC296D90E900DF0E77 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A06771B9296D90E900DF0E77 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
 		A0CB12DF296C5A3D007522EC /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A0CB12DE296C5A3D007522EC /* XCRemoteSwiftPackageReference "lottie-ios" */;

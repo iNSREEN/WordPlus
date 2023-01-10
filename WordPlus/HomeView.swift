@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct HomeView: View {
+    @StateObject var realmManager = RealmManager()
     @State var isSheetPresented = false
     @AppStorage("key2")  var shouldshowonb = true
+    
     var body: some View {
         ZStack {
             Color("SecondMain")
@@ -29,16 +31,17 @@ struct HomeView: View {
               
                 ScrollView{
                     
-                    ForEach(1..<10) { i in
-                        RowView()
+                    ForEach(realmManager.Models , id: \.id) { i in
+                        
+                        RowView(word1: i.Word, word2: i.Meaning)
                     }
                 }
-            }
+            }.padding(.top)
             
         }
-        
+         
         .sheet(isPresented: $isSheetPresented, content: {
-            AddView()
+            AddView().environmentObject(realmManager)
         })
         .padding()
         .fullScreenCover(isPresented: $shouldshowonb ){

@@ -12,13 +12,17 @@ struct OnBoarding1View: View {
         
         ZStack{
             Color("SecondMain").ignoresSafeArea()
-            Image("Image1").resizable().frame(width: 500, height: 500).position(x:360, y: 40)
+            Image("Image1")
+                .resizable().frame(width: 500, height: 500).position(x:350, y: 165)
             
             VStack {
                 
                 LottieView(filename: "40448-select-your-language.json")
-                    .frame(width: 200, height: 200)
-                Text("To learn a new language ").foregroundColor(Color("Main"))
+                    .frame(width: 300, height: 300).padding(.trailing,35)
+                    //.position(x : 180 , y : 350)
+                Text("To learn a new language ")
+                    .foregroundColor(Color("Main"))
+                    .font(.largeTitle)
                 
             }
         }

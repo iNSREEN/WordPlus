@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct AddView: View {
+    @EnvironmentObject var realmManager : RealmManager
+    @Environment(\.dismiss) var dismiss
     @State var word = ""
     @State var meaning = ""
     var body: some View {
@@ -42,8 +44,11 @@ struct AddView: View {
                 }
                 
                 Button {
-                    //sdjso
-                    print("meow for now ")
+                    if word != "" && meaning != ""{
+                        realmManager.addModel(ModelWord: word, ModelMeaning: meaning)
+                        
+                    }
+                    dismiss()
                 } label: {
                     ZStack {
                         RoundedRectangle(cornerRadius: 16).frame(width: 110, height: 45).foregroundColor(Color("Main"))
@@ -60,6 +65,6 @@ struct AddView: View {
 
 struct AddView_Previews: PreviewProvider {
     static var previews: some View {
-        AddView()
+        AddView().environmentObject(RealmManager())
     }
 }

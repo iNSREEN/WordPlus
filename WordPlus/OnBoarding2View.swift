@@ -14,7 +14,9 @@ struct OnBoarding2View: View {
         
         ZStack{
             Color("SecondMain").ignoresSafeArea()
-            Image("Image2").resizable().frame(width: 500, height: 500).position(x:360, y:40)
+            Image("Image2").resizable()
+                .frame(width: 500, height: 500)
+                .position(x:130, y:150)
             
             VStack {
                 
@@ -25,7 +27,9 @@ struct OnBoarding2View: View {
                 Button {
                     shouldshowonb.toggle()
                 } label: {
+                    
                     Text("start")
+                    
                 }
 
                 
