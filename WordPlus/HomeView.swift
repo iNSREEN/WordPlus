@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     @State var isSheetPresented = false
+    @AppStorage("key1")  var shouldshowonb = true
     var body: some View {
         ZStack {
             Color("SecondMain")
@@ -40,15 +41,19 @@ struct HomeView: View {
             AddView()
         })
         .padding()
+        .fullScreenCover(isPresented: $shouldshowonb ){
+                tab(shouldshowonb: $shouldshowonb)
+              }.ignoresSafeArea(.all)
     }
 }
-
-struct HomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeView()
-    }
-}
-
+//
+//struct HomeView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HomeView(isSheetPresented: .constant(false), shouldshowonb: true)
+//
+//    }
+//}
+//
 
 
 struct HeaderView: View {
@@ -61,4 +66,22 @@ struct HeaderView: View {
         }.foregroundColor(Color("Main"))
             .font(.largeTitle)
     }
+}
+
+struct tab : View{
+    @Binding var shouldshowonb :Bool
+    var body: some View {
+        
+        ZStack{
+            Color("SecondMain").ignoresSafeArea(.all)
+        TabView{
+            
+            Text("meow1").background(.red)
+            Text("meow2")
+                        
+        }.tabViewStyle(PageTabViewStyle())
+              
+        }
+    }
+    
 }
