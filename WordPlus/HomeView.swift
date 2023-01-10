@@ -28,7 +28,7 @@ struct HomeView: View {
               
                 ScrollView{
                     
-                    ForEach(1..<8) { i in
+                    ForEach(1..<10) { i in
                         RowView()
                     }
                 }
