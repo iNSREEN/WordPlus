@@ -13,27 +13,51 @@ struct OnBoarding2View: View {
       
         
         ZStack{
-            Color("SecondMain").ignoresSafeArea()
-            Image("Image2").resizable()
-                .frame(width: 500, height: 500)
-                .position(x:130, y:150)
+           // Color("SecondMain").ignoresSafeArea()
+          //  Image("Image1")
+             //   .resizable().frame(width: 680, height: 550).position(x:350, y: 165)
+               // .position(x:100, y:100)
+            Image("Image2").resizable().frame(width: 2000, height: 1000)
+                .ignoresSafeArea()
             
             VStack {
                 
-                LottieView(filename: "67614-landing-page-element-animation")
-                    .frame(width: 340, height: 300)
-                HStack{
-                    Text("Start with a")
-                        .foregroundColor(Color("Second"))
-                    Text("word")
+              //  LottieView(filename: "67614-landing-page-element-animation")
+                //    .frame(width: 340, height: 300)
+                
+               LottieView(filename: "40448-select-your-language.json")
+                    .frame(width: 400, height: 400)
+                    .padding(.trailing,50)
+                    //.position(x : 180 , y : 350)
+                
+                
+                    Text("To learn a new language ")
+//.bold()
                         .foregroundColor(Color("Main"))
-                    
-                }.font(.largeTitle)
-                    .bold()
+                    .font(.largeTitle)
+                    HStack{
+                        Text("Start with a")
+                            .foregroundColor(Color("Main"))
+                            
+                        Text("word")
+                            .foregroundColor(Color("Main"))
+                            .bold()
+                        
+                    }.font(.largeTitle)
+                       // .bold()
+                
+                
+        
                 Button {
                     shouldshowonb.toggle()
                 } label: {
-                    Text( "Start")
+                    
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 25).frame(width:110,height: 45)
+                          
+                            .foregroundColor(Color("Main"))
+                        Text( "Start").foregroundColor(Color("SecondMain"))
+                    }.padding(.top)
                      
                     
                     

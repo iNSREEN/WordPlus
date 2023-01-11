@@ -20,29 +20,26 @@ struct AddView: View {
             VStack {
                 HStack {
                     Text("Add new Word")
-                        .foregroundColor(Color("Main")).font(.title)
+                        .foregroundColor(Color("Main")).font(.largeTitle).bold()
                     Spacer()
                     
-                }
+                }.padding(.bottom,30)
                 
                 HStack{
-                    VStack(alignment: .leading){
-                        Text("Word")
+                    VStack(alignment: .leading,spacing: 1){
+                        Text("Word").font(.title3)
                         TextField("enter..", text: $word)
                             .textFieldStyle(.roundedBorder).frame(width: 150, height: 65)
                     }
+                    Spacer()
                     
-                    
-                    VStack(alignment: .leading){
-                        Text("Meaning")
+                    VStack(alignment: .leading,spacing: 1){
+                        Text("Meaning").font(.title3)
                         TextField("enter..", text: $meaning)
                             .textFieldStyle(.roundedBorder).frame(width: 150, height: 65)
                     }
                     
-                    
-
-                    
-                }
+                }.padding(.horizontal)
                 
                 Button {
                     if word != "" && meaning != ""{
@@ -55,7 +52,7 @@ struct AddView: View {
                         RoundedRectangle(cornerRadius: 16).frame(width: 110, height: 45).foregroundColor(Color("Main"))
                         Text("Add").foregroundColor(Color("SecondMain"))
                     }
-                }
+                }.padding(.top,25)
 
             }.padding(.horizontal)
         }
