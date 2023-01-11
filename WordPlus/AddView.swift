@@ -16,7 +16,9 @@ struct AddView: View {
         
         
         ZStack {
-            Color.gray.ignoresSafeArea().opacity(0.4)
+           
+            Color("Second").ignoresSafeArea()
+
             VStack {
                 HStack {
                     Text("Add new Word")
@@ -27,7 +29,7 @@ struct AddView: View {
                 
                 HStack{
                     VStack(alignment: .leading,spacing: 1){
-                        Text("Word").font(.title3)
+                        Text("Word").font(.title3).foregroundColor(Color("Main"))
                         TextField("enter..", text: $word)
                             .textFieldStyle(.roundedBorder).frame(width: 150, height: 65)
                     }
@@ -35,8 +37,11 @@ struct AddView: View {
                     
                     VStack(alignment: .leading,spacing: 1){
                         Text("Meaning").font(.title3)
+                            .foregroundColor(Color("Main"))
                         TextField("enter..", text: $meaning)
-                            .textFieldStyle(.roundedBorder).frame(width: 150, height: 65)
+                            .textFieldStyle(.roundedBorder)
+                            .frame(width: 150, height: 65)
+                        
                     }
                     
                 }.padding(.horizontal)

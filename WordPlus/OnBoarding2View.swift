@@ -28,11 +28,10 @@ struct OnBoarding2View: View {
                LottieView(filename: "40448-select-your-language.json")
                     .frame(width: 400, height: 400)
                     .padding(.trailing,50)
-                    //.position(x : 180 , y : 350)
-                
+                  
                 
                     Text("To learn a new language ")
-//.bold()
+
                         .foregroundColor(Color("Main"))
                     .font(.largeTitle)
                     HStack{
@@ -44,7 +43,7 @@ struct OnBoarding2View: View {
                             .bold()
                         
                     }.font(.largeTitle)
-                       // .bold()
+                    
                 
                 
         
