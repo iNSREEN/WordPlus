@@ -32,6 +32,8 @@ struct AddView: View {
                         Text("Word").font(.title3).foregroundColor(Color("Main"))
                         TextField("enter..", text: $word)
                             .textFieldStyle(.roundedBorder).frame(width: 150, height: 65)
+                           .accessibilityLabel(Text("Word"))
+                            
                     }
                     Spacer()
                     
@@ -41,6 +43,7 @@ struct AddView: View {
                         TextField("enter..", text: $meaning)
                             .textFieldStyle(.roundedBorder)
                             .frame(width: 150, height: 65)
+                           .accessibilityLabel(Text("Meaning"))
                         
                     }
                     
@@ -49,13 +52,15 @@ struct AddView: View {
                 Button {
                     if word != "" && meaning != ""{
                         realmManager.addModel(ModelWord: word, ModelMeaning: meaning)
-                        
+                            
                     }
                     dismiss()
+                    
                 } label: {
                     ZStack {
                         RoundedRectangle(cornerRadius: 16).frame(width: 110, height: 45).foregroundColor(Color("Main"))
                         Text("Add").foregroundColor(Color("SecondMain"))
+                          .accessibilityLabel(Text("Add"))
                     }
                 }.padding(.top,25)
 

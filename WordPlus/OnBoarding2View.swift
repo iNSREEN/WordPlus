@@ -55,7 +55,9 @@ struct OnBoarding2View: View {
                         RoundedRectangle(cornerRadius: 25).frame(width:110,height: 45)
                           
                             .foregroundColor(Color("Main"))
-                        Text( "Start").foregroundColor(Color("SecondMain"))
+                        Text( "Start")
+                            .foregroundColor(Color("SecondMain"))
+                            .accessibilityLabel(Text("Start"))
                     }.padding(.top)
                      
                     
