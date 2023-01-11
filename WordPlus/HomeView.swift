@@ -30,7 +30,7 @@ struct HomeView: View {
                     }
                     
                 }.foregroundColor(Color("Main"))
-                    .font(.largeTitle)
+                    .font(.largeTitle).padding()
                 
                 if realmManager.Models.isEmpty{
                     VStack{
@@ -52,14 +52,13 @@ struct HomeView: View {
             }.padding(.top,35)
             
         }
-         
         .sheet(isPresented: $isSheetPresented, content: {
             AddView().environmentObject(realmManager)
                 .presentationDetents([.medium])
             
             
         })
-        .padding()
+       
         .fullScreenCover(isPresented: $shouldshowonb ){
                 tab(shouldshowonb: $shouldshowonb)
               }.ignoresSafeArea(.all)
