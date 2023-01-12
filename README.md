@@ -19,7 +19,7 @@ A way for learners who want to learn a new language by learning new vocabularies
 ![](2.jpg)
 
 ## Challenge Summary
-![](WordPlus)
+![](WordPlus.key)
 
 ## Languages 
 - Arabic
