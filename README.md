@@ -1,16 +1,9 @@
 # WordPlus
-Safetie is a free tool to detect malicious URLs including malware, scam and phishing links.
 an IOS App to lean new vocabularies.
 
 
-
-
-
-
 ## App InterFace
-![]()
-
-
+![](1.jpg)
 
 
 
@@ -19,7 +12,9 @@ an IOS App to lean new vocabularies.
 - SwiftUI
 - Realm
 
-
+## Languages 
+- Arabic
+- English
 
 ## Authors
 
