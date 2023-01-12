@@ -14,7 +14,8 @@ A way for learners who want to learn a new language by learning new vocabularies
 - Xcode
 
 ## App Demo
-![](RPReplay_Final1673524201.mov)
+[RPReplay_Final1673524201.mov.zip](https://github.com/iNSREEN/WordPlus/files/10401621/RPReplay_Final1673524201.mov.zip)
+
 
 
 ## Challenge Summary
