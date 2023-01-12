@@ -4,8 +4,8 @@ an IOS App to lean new vocabularies.
 
 ## App InterFace
 ![](1.jpg)
-
-
+![](3.jpg)
+![](2.jpg)
 
 
 ## Technologies 
