@@ -18,7 +18,7 @@ A way for learners who want to learn a new language by learning new vocabularies
 
 
 ## Challenge Summary
-![](WordPlus.key)
+![](Screenshot 1444-06-19 at 3.38.48 PM.png)
 
 ## Languages 
 - Arabic
